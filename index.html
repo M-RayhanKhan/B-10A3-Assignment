@@ -53,7 +53,7 @@
 </head>
 
 <body class="fontFamily">
-    <article class="md:w-5/6 mx-auto px-4">
+    <article class="lg:w-5/6 mx-auto px-4 mb-10">
         <!-- Our Latest Portfolio section -->
         <section>
         <!-- content -->
@@ -66,10 +66,11 @@
             <p class="md:w-1/2 w-[78%] text-center mx-auto description text-[15px] font-[500] leading-4 ">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
          </div>
          <!-- portfolio images  -->
-          <div class="grid grid-cols-1  lg:grid-cols-6 gap-5 my-10">
+         <div class="flex md:hidden lg:flex">
+          <div class="grid grid-cols-1  lg:grid-cols-6 gap-5 mt-10 mb-5">
             <div class="md:col-span-6 lg:col-span-4">
-             <div class="flex flex-col md:flex-row space-x-5 rounded-[12px] border bg-color px-4 py-4">
-              <img class="border-2 border-slate-200 border-dashed" src="./images/img1.png" alt="">
+             <div class="flex flex-col md:flex-row lg:space-x-5 rounded-[12px] border bg-color px-4 py-4">
+              <img class="border-2 border-[#E9E9E9] border-dashed" src="./images/img1.png" alt="">
               <div class="space-y-3">
                 <h5 class="text-xl font-bold mt-4 md:mt-0">Commercial</h5>
                 <p class="p font-bold text-[15px]">The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
@@ -78,23 +79,84 @@
              </div>
             </div>
             <div class="lg:col-span-2 rounded-[12px] border bg-color p-4 lg:flex">
-              <img class="w-full border-2 border-slate-200 border-dashed" src="./images/img2.png" alt="">
+              <img class="w-full border-2 border-[#E9E9E9] border-dashed" src="./images/img2.png" alt="">
             </div>
           </div>
+         </div>
           
           <!-- there colum -->
-           <div class="grid grid-cols-1 lg:grid-cols-5 gap-10">
-            <div class="rounded-[12px] border bg-color p-4"></div>
-            <div class="lg:col-span-3 rounded-[12px] border bg-color p-4">
-
-            </div>
-            <div class="rounded-[12px] border bg-color p-4"></a>>
-
-            </div>
-           </div>
+          <div class="flex lg:flex md:hidden ">
+            <div class="grid grid-cols-1 grid-rows-1 lg:grid-cols-8 gap-5">
+              <!-- item 1 -->
+              <div class="lg:col-span-2 order-3 lg:order-none  rounded-[12px] border bg-color p-4">
+                <img class="border-2 border-[#E9E9E9] w-full border-dashed" src="./images/img3.png" alt="">
+              </div>
+              <!-- items 2 -->
+              <div class="rounded-[12px] order-2 lg:order-none lg:col-span-4 flex flex-col md:flex-row  border bg-color px-4 py-3">
+                  <img class="border-2 border-[#E9E9E9] border-dashed" src="./images/img4.png" alt="">
+                  <div class="space-y-3 lg:ml-5">
+                    <h5 class="text-xl font-bold mt-4 md:mt-0">Commercial</h5>
+                    <p class="p font-bold text-[15px]">The barn house captivates with its blend of rustic charm and modern. </p>
+                    <h3 class="font-extrabold text-[18px]">View Details <i class="fa-solid fa-arrow-right-long bg-icon rounded-full ml-2 opacity-85 -rotate-45 p-2"></i></h3>
+                  </div>
+              </div>
+              <!-- item 3 -->
+              <div class="rounded-[12px] order-1 lg:order-none lg:col-span-2 border bg-color p-4"></a>
+                <img class="border-2 w-full border-[#E9E9E9] border-dashed" src="./images/img5.png" alt="">
+              </div>
+              <div class="rounded-[12px] order-4 lg:hidden lg:col-span-2 border bg-color p-4"></a>
+                <img class="border-2 w-full border-[#E9E9E9] border-dashed" src="./images/img5.png" alt="">
+              </div>
+             </div>
+          </div>
           
-          <!-- new section -->
 
+
+          <!-- medium device-->
+         <div class="md:flex hidden mt-6 lg:hidden">
+          <div class="grid gap-5 grid-cols-6">
+            <!-- item 1 -->
+            <div class="md:col-span-6">
+              <div class="flex flex-col md:flex-row space-x-5 rounded-[12px] border bg-color px-4 py-4">
+               <img class="h-[160px] w-[330px]" src="./images/img1.png" alt="">
+               <div class="space-y-4">
+                 <h5 class="text-xl font-bold mt-4 md:mt-0">Commercial</h5>
+                 <p class="p font-bold text-[15px]">The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
+                 <h3 class="font-extrabold text-[18px]">View Details <i class="fa-solid fa-arrow-right-long bg-icon rounded-full ml-2 opacity-85 -rotate-45 p-2"></i></h3>
+               </div>
+              </div>
+             </div>
+             <!-- item 2 -->
+             <div class="col-span-3  h-[200px] rounded-[12px] border bg-color p-4">
+              <img class="w-full h-full" src="./images/img2.png" alt="">
+             </div>
+             <!-- item 3 -->
+             <div class="col-span-3  h-[200px] rounded-[12px] border bg-color p-4">
+              <img class="w-full h-full" src="./images/img5.png" alt="">
+             </div>
+             <!-- item 4 -->
+             <div class="col-span-6 ">
+              <div class="flex md:flex-row space-x-5 rounded-[12px] border bg-color px-4 py-4">
+               <img class="h-32 w-[250px]" src="./images/img4.png" alt="">
+               <div class="space-y-3">
+                 <h5 class="text-xl font-bold ">Commercial</h5>
+                 <p class="p font-bold text-[15px]">The barn house captivates with its blend of rustic charm and modern.</p>
+                 <h3 class="font-extrabold text-[18px]">View Details <i class="fa-solid fa-arrow-right-long bg-icon rounded-full ml-2 opacity-85 -rotate-45 p-2"></i></h3>
+               </div>
+              </div>
+             </div>
+             <div class="col-span-3  rounded-[12px] border bg-color p-4">
+              <!-- <img class="w-full h-full" src="./images/img3.png" alt=""> -->
+               <div class="item-4">
+
+               </div>
+             </div>
+             <div class="col-span-3 h-[200px] rounded-[12px] border bg-color p-4">
+              <!-- <img class="w-full h-full" src="./images/img5.png" alt=""> -->
+               <div class="item-5"></div>
+             </div>
+          </div>
+         </div>
         </section>
    </article>
 </body>
