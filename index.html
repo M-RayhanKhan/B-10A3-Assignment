@@ -37,9 +37,6 @@
         .card-title{
           color: rgb(73, 73, 73);
         }
-        .nav-text{
-          color: rgb(73, 73, 73);
-        }
         
     </style>
     <!-- tailwind Css configuration  -->
@@ -51,9 +48,14 @@
               clifford: '#737373',
               primary_color: 'rgb(255, 255, 255)',
               btn_color: '#ABEF5F', 
+              title_color: 'rgb(73, 73, 73)',
+              title_h1: 'rgb(33, 33, 33)',
+              des: 'rgb(115, 115, 115)',
+              bg_design: 'rgb(30, 30, 30)',
             },
            backgroundImage: {
             discountImage: "url('./images/bg.jpg')",
+            design_image: "url('./images/Rectangle.png')"
            },
           }
 
@@ -63,7 +65,7 @@
 </head>
 
 <body class="manrope">
-  <header class="bg-gradient-to-r mt-4 from-[#FFFFFF] to-[#FFFFFF00]">
+  <header class="bg-gradient-to-r  from-[#FFFFFF] md:pb-20 pb-10 to-[#FFFFFF00]">
     <!-- navbar -->
     <div class="navbar  items-center lg:w-5/6 mx-auto px-px pl-2">
       <div class="navbar-start">
@@ -107,15 +109,54 @@
     <!-- banner -->
      <div class="flex flex-col justify-center items-center text-center">
       <img class="w-3/4 md:w-[70%] lg:w-[40%] mb-4" src="./images/banner.png" alt="">
-     <div class="lg:w-[60%] md:w-[78%] w-[90%]">
+     <div class="lg:w-[60%] md:w-[78%] w-[90%] space-y-8">
       <h1 class="lg:text-5xl text-3xl md:text-[36px] md:leading-9 lg:leading-none leading-7  font-bold title">A barn house of this design has a striking appearance</h1>
       <p class="lg:w-[80%] mx-auto card-title text-[15px] leading-5 mt-4">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
      </div>
-      <button class="bg-[#ABEF5F80] border border-[#ABEF5F] mt-4 text-[17px] px-6 py-3 rounded-full font-bold"> View Details <i class="fa-solid fa-arrow-right-long bg_icon rounded-full mr-1 opacity-85 -rotate-45 p-2 text-[16px] ml-1"></i></button>
+      <button class="bg-[#ABEF5F80] border  border-[#ABEF5F] mt-8 text-[17px] px-6 py-3 rounded-full font-bold"> View Details <i class="fa-solid fa-arrow-right-long bg_icon rounded-full mr-1 opacity-85 -rotate-45 p-2 text-[16px] ml-1"></i></button>
      
      </div>
   </header>
+  <main>
+      <!-- We design thoughtful, liveable spaces -->
+    <article class="bg-orange-50">
+      <section>
+        <div class="lg:flex hidden relative left-5 top-5">
+          <img class="w-20 py-3 border-2 border-dashed" src="./images/Vector.png" alt="">
+        </div>
+        <div class="flex flex-col lg:flex-row lg:gap-12  lg:w-5/6 mx-auto px-4">
+          <div class="lg:flex-1 ">
+           <div class="md:text-center text-center lg:text-start space-y-3 mb-4">
+            <h6 class="text-title_color"><i class="fa-solid fa-arrow-right-long"></i> <span class="font-bold">About Us</span></h6>
+            <h1 class="text-4xl text-title_h1 font-bold ">We design thoughtful, liveable spaces</h1>
+            <p class="text-title_color font-medium">The barn house captivates with its blend of rustic charm and 
+              modern sophistication, featuring weathered wood, sleek metal accents.</p>
+           </div>
+              <div class="md:grid md:grid-cols-2 md:gap-4 lg:gap-0 lg:grid-cols-1">
+                <div class="bg-primary_color mb-4 flex items-center  rounded-lg px-4 py-4">
+                  <img class="w-[42px] lg:w-auto mb-10 lg:mb-0" src="./images/commercial.png" alt="">
+                  <div class="ml-4">
+                    <h5 class="text-[18px] text-title_color mb-3 md:mb-0 font-[700]">Commercial</h5>
+                    <p class="text-des leading-5 font-medium  mt-2">The barn house captivates with its blend of rustic charm and modern.</p>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="bg-primary_color mb-4 flex items-center rounded-lg px-4 py-4">
+                  <img class="w-[42px] lg:w-auto mb-10 lg:mb-0" src="./images/commercial.png" alt="">
+                  <div class="ml-4">
+                    <h5 class="text-[18px] text-title_color mb-3 md:mb-0 font-[700]">Residential</h5>
+                    <p class="text-des leading-5 font-medium  mt-2">The barn house captivates with its blend of rustic charm and modern.</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="lg:flex-1 bg-design_image rounded-xl mt-6 lg:mt-0 bg-cover bg-center bg-no-repeat  lg:h-[430px] h-56 md:h-[350px] lg:w-96">
+          </div>
+        </div>
+       </section>
+    </article>
     <article class="lg:w-5/6 mx-auto px-4 mb-10">
+    
         <!-- Our Latest Portfolio section -->
         <section>
         <!-- content -->
@@ -429,6 +470,7 @@
         
          </div>
        </section>
+  </main>
 </body>
 
 </html>
