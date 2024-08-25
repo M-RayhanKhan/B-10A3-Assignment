@@ -8,7 +8,7 @@
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <!-- daisyUi CDN-->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -53,6 +53,9 @@
               des: 'rgb(115, 115, 115)',
               bg_design: 'rgb(30, 30, 30)',
             },
+            fontFamily:{
+              inter: "Inter"
+            },
            backgroundImage: {
             discountImage: "url('./images/bg.jpg')",
             design_image: "url('./images/Rectangle.png')"
@@ -64,7 +67,7 @@
     </script>
 </head>
 
-<body class="manrope">
+<body class="font-inter">
   <header class="bg-gradient-to-r  from-[#FFFFFF] md:pb-20 pb-10 to-[#FFFFFF00]">
     <!-- navbar -->
     <div class="navbar  items-center lg:w-5/6 mx-auto px-px pl-2">
@@ -119,7 +122,7 @@
   </header>
   <main>
       <!-- We design thoughtful, liveable spaces -->
-    <article class="bg-orange-50">
+    <article class="bg-[#f4f4f4] pb-10 ">
       <section>
         <div class="lg:flex hidden relative left-5 top-5">
           <img class="w-20 py-3 border-2 border-dashed" src="./images/Vector.png" alt="">
@@ -154,6 +157,81 @@
           </div>
         </div>
        </section>
+       <!-- happy client section -->
+        <section class="lg:w-5/6 mx-auto px-4 my-20">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 md:gap-5 bg-primary_color p-6">
+            <!-- item 1 -->
+            <div class="bg-primary_colo bg-primary_color rounded-xl p-6 flex flex-col justify-center items-center">
+              <img src="./images/concept.png" alt="">
+              <h3 class="text-4xl font-bold text-title_color my-2">235+</h3>
+              <p class="font-medium text-des">Happy Client Review</p>
+            </div>
+            <!-- item 2 -->
+            <div class="bg-primary_colo bg-primary_color rounded-xl p-6 flex flex-col justify-center items-center">
+              <img src="./images/vision.png" alt="">
+              <h3 class="text-4xl font-bold text-title_color my-2">50+</h3>
+              <p class="font-medium text-des">Work Departments</p>
+            </div>
+            <!-- item 3 -->
+            <div class="bg-primary_colo bg-primary_color rounded-xl p-6 flex flex-col justify-center items-center">
+              <img src="./images/budget-planning.png" alt="">
+              <h3 class="text-4xl font-bold text-title_color my-2">30k+</h3>
+              <p class="font-medium text-des">Our Happy Client</p>
+            </div>
+            <!-- item 4 -->
+            <div class="bg-primary_colo bg-primary_color rounded-xl p-6 flex flex-col justify-center items-center">
+              <img src="./images/concept.png" alt="">
+              <h3 class="text-4xl font-bold text-title_color my-2">307+</h3>
+              <p class="font-medium text-des">Staff Members</p>
+            </div>
+        </div>
+        </section>
+        <!--  -->
+        <section class="lg:w-5/6 mx-auto px-4">
+            <div class="text-center space-y-3">
+              <h6 class="font-bold text-[#494949]">
+                <i class="fa-solid fa-arrow-right-long mr-3"></i>
+                How we works
+              </h6>
+            <h1 class="text-[#252525] font-bold text-5xl">Our Works Process</h1>
+            <p class="text-title_color font-medium lg:w-[50%] md:w-[90%] mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+            </div>
+            <!-- box items -->
+            <div class="grid gap-4 mt-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+              <!-- box 1 -->
+              <div class="bg-[#e7c1d3] px-4 py-4 rounded-xl">
+                <div>
+                  <img src="./images/concept.png" alt="">
+                </div>
+                <h5 class="font-bold my-2">Concept</h5>
+                <p class="text-title_color">The barn house captivates with its blend of rustic charm and modern.</p>
+               </div>
+              <!-- box 2 -->
+              <div class="bg-[#efda6e] px-4 py-4 rounded-xl">
+                <div>
+                  <img src="./images/flow-chart.png" alt="">
+                </div>
+                <h5 class="font-bold my-2">Design Process</h5>
+                <p class="text-title_color">The barn house captivates with its blend of rustic charm and modern.</p>
+               </div>
+              <!-- box 3 -->
+              <div class="bg-[#a4dac4] px-4 py-4 rounded-xl">
+                <div>
+                  <img src="./images/vision.png" alt="">
+                </div>
+                <h5 class="font-bold my-2">Supervision</h5>
+                <p class="text-title_color">The barn house captivates with its blend of rustic charm and modern.</p>
+               </div>
+              <!-- box 4 -->
+              <div class="bg-[#77aaea] px-4 py-4 rounded-xl">
+                <div>
+                  <img src="./images/budget-planning.png" alt="">
+                </div>
+                <h5 class="font-bold my-2">Budget Planning</h5>
+                <p class="text-title_color">The barn house captivates with its blend of rustic charm and modern.</p>
+               </div>
+            </div>
+        </section>
     </article>
     <article class="lg:w-5/6 mx-auto px-4 mb-10">
     
@@ -471,6 +549,24 @@
          </div>
        </section>
   </main>
+  <footer class="bg-[#1c1c1c] flex flex-col justify-center py-20 px-4">
+    <div class="text-center">
+      <h6 class="flex items-center justify-center font-bold text-[#494949] py-2 px-6 rounded-full">
+        <i class="fa-solid fa-arrow-right-long bg-[#a5ec65] p-2 rounded-full text-black -rotate-45 mr-1"></i>
+        <span class="text-[#E9E9E9] text-2xl">Rinterio</span>
+      </h6>
+      <p class="text-des font-medium md:w-[80%] lg:w-[50%] mx-auto mb-8 mt-2">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+    </div>
+     <div class="flex flex-col md:flex-row gap-10 items-center mb-5 justify-between md:w-[60%] mx-auto  font-normal text-[#E9E9E9] list-none">
+        <li>Home</li>
+        <li>Service</li>
+        <li>Portfolio</li>
+        <li>Blogs</li>
+     </div>
+     <div class="flex justify-center mt-5">
+      <button class="bg-[#abef5f] px-4 py-3 rounded-full"><span class="font-bold">Book Consult</span><i class="fa-solid fa-arrow-right-long p-2 rounded-full ml-2 text-white bg-black -rotate-45 mr-1"></i></button>
+     </div>
+  </footer>
 </body>
 
 </html>
